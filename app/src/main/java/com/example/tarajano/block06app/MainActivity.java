@@ -40,11 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                imageView02.setColorFilter(Color.argb(255,0, lastProgress,255-lastProgress));
-                //imageView02.setImageAlpha(lastProgress);
-                if(lastProgress < 3){
-                    imageView02.setImageResource(R.drawable.tux);
-                }
+                imageView02.setColorFilter(Color.argb(lastProgress,0, 0, 0));
             }
         });
     }
